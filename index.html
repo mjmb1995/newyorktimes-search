@@ -14,6 +14,7 @@
 		<h1>New York Times Article Search</h1>
 	</header>
 
+	<!-- Section for user input -->
 	<section class="panel panel-primary">
 		<div class="panel-heading">
 	    	<h3 class="panel-title">Search Parameters</h3>
@@ -21,35 +22,36 @@
 
 	  	<div class="panel-body">
 	   
-	  		<label for="basic-url">Search Term</label>
+	  		<label for="basic-url">Search Term:</label>
 			<div class="input-group">
 			  <input type="text" class="form-control" id="search-term">
 			</div>
 
 			<label for="basic-url">Number of Articles to Retrieve:</label>
 			<div class="input-group">
-			  <input type="text" class="form-control" id="number-articles">
+			  <input type="text" class="form-control" id="number-articles" placeholder="1 - 10 Articles, Default is 5">
 			</div>
 
 			<label for="basic-url">Start Year (Optional):</label>
 			<div class="input-group">
-			  <input type="text" class="form-control" id="start-year">
+			  <input type="text" class="form-control" id="start-year" placeholder="Format: YYYYMMDD">
 			</div>
 
 			<label for="basic-url">End Year (Optional):</label>
 			<div class="input-group">
-			  <input type="text" class="form-control" id="end-year">
+			  <input type="text" class="form-control" id="end-year" placeholder="Format: YYYYMMDD">
 			</div>
 
 			<div>
 				<button type="button" class="btn btn-warning" id="submit">Submit</button>
-				<button type="button" class="btn btn-danger" id="clear">Clear</button>
+				<button type="button" class="btn btn-danger" id="clear">Clear Articles</button>
 			</div>
 
 	  	</div>
 	</section>
 
-	<section class="panel panel-success">
+	<!-- Section where articles will be added -->
+	<section class="panel panel-primary">
 		<div class="panel-heading">
 		    <h3 class="panel-title">Top Articles</h3>
 		</div>
