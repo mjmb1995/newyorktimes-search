@@ -4,7 +4,7 @@ $(function() {
     //clear text data
     $("#clear").on("click", function(e){
     	e.preventDefault();
-    	$("#article-section").val("");
+    	$("#article-section").empty();
     })
 
     //searches for articles
@@ -26,15 +26,15 @@ $(function() {
 			});
 
 			//adds start/end date if user provided valid values
-			if (startDate !== "" && typeof startDate === "number" && startDate.length === 8 ){
+			if (startDate !== "" && typeof startDate === "number" && startDate.length === 4 ){
 				url += '?' + $.param({
-			  		'begin_date': startDate
+			  		'begin_date': startDate + "0101"
 				});
 			}
 
-			if (endDate !== "" && typeof endDate === "number" && endDate.length === 8){
+			if (endDate !== "" && typeof endDate === "number" && endDate.length === 4){
 				url += '?' + $.param({
-			  		'end_date': endDate
+			  		'end_date': endDate + "0101"
 				});
 			}
 
