@@ -9,7 +9,60 @@
 	<link rel="stylesheet"  href="assets/css/app.css">
 	<title>NYT Article Search</title>
 </head>
-<body>
+<body class="container">
+	<header class="page-header text-center">
+		<h1>New York Times Article Search</h1>
+	</header>
+
+	<section class="panel panel-primary">
+		<div class="panel-heading">
+	    	<h3 class="panel-title">Search Parameters</h3>
+	  	</div>
+
+	  	<div class="panel-body">
+	   
+	  		<label for="basic-url">Search Term</label>
+			<div class="input-group">
+			  <input type="text" class="form-control" id="search-term">
+			</div>
+
+			<label for="basic-url">Number of Articles to Retrieve:</label>
+			<div class="input-group">
+			  <input type="text" class="form-control" id="number-articles">
+			</div>
+
+			<label for="basic-url">Start Year (Optional):</label>
+			<div class="input-group">
+			  <input type="text" class="form-control" id="start-year">
+			</div>
+
+			<label for="basic-url">End Year (Optional):</label>
+			<div class="input-group">
+			  <input type="text" class="form-control" id="end-year">
+			</div>
+
+			<div>
+				<button type="button" class="btn btn-warning" id="submit">Submit</button>
+				<button type="button" class="btn btn-danger" id="clear">Clear</button>
+			</div>
+
+	  	</div>
+	</section>
+
+	<section class="panel panel-success">
+		<div class="panel-heading">
+		    <h3 class="panel-title">Top Articles</h3>
+		</div>
+	  	<div class="panel-body" id="article-section">
+	    
+	  	</div>
+	</section>
+
+	<footer class="row text-center">
+		<div class="col-md-12">
+			<h3 class="panel-title">&#169; 2018 Mark Joshua Bihag. All rights reserved.</h3>
+		</div>
+	</footer>
 
 	<script src="assets/vendor/jquery-3.3.1.min.js"></script>
 	<script src="assets/scripts/app.js"></script>
